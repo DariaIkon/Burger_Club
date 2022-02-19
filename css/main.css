@@ -271,3 +271,138 @@ body {
   margin: 15px 0;
   width: 398px;
 }
+
+/* MENU */
+
+#menu_container {
+  width: 1170px;
+  margin: 0 auto;
+}
+#menu .menu_title {
+  color: rgb(51, 23, 3);
+  margin: 70px auto 45px auto;
+}
+#menu_category_list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 30px auto;
+}
+.menu_category_item {
+  font-size: 20px;
+  font-family: "Roboto Light", sans-serif;
+  color: rgb(51, 23, 3);
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  margin: 0 10px;
+  padding: 10px 15px;
+}
+.menu_category_item.active {
+  font-family: "Roboto Bold", sans-serif;
+  border: 1px solid rgb(51, 23, 3);
+}
+.menu_category_item:hover {
+  border: 1px solid rgb(51, 23, 3);
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+.menu_list {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.menu_burger_item {
+  display: flex;
+  justify-content: space-between;
+}
+.menu_burger_img {
+  width: 580px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu_burger_img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.menu_burger_info_wrapper {
+  width: 500px;
+}
+.menu_burger_dscrptn_title {
+  font-size: 25px;
+  font-family: "Roboto Bold", sans-serif;
+  color: rgb(51, 23, 3);
+  text-transform: uppercase;
+  margin: 100px 0 35px 0;
+}
+.menu_burger_dscrptn_text {
+  font-size: 16px;
+  font-family: "Roboto Light", sans-serif;
+  color: rgb(51, 23, 3);
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+.menu_burger_properties {
+  display: flex;
+}
+.menu_burger_property:first-child {
+  margin-right: 80px;
+}
+.menu_burger_property img {
+  margin-right: 10px;
+}
+.menu_burger_property span {
+  font-size: 20px;
+  font-family: "Roboto Light", sans-serif;
+  color: rgb(51, 23, 3);
+  line-height: 1.5;
+}
+.menu_slider {
+  display: flex;
+  margin-bottom: 95px;
+  margin-top: 10px;
+}
+.menu_burger_slider_item {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  opacity: 0.3;
+}
+.menu_slider .menu_burger_slider_item.slick-current {
+  opacity: 1;
+}
+.menu_slider .menu_burger_slider_item:focus {
+  outline: 0;
+}
+.menu_slider_item:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.menu_burger_slider_item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.slick-slide img {
+  display: inline;
+}
+.slick-initialized .slick-slide {
+  display: flex;
+}
+.slick-prev:before {
+  content: url(../images/menu/arrow_left.png);
+}
+.slick-next:before {
+  content: url(../images/menu/arrow_right.png);
+}
+.slick-next {
+  left: 600px;
+}
+#fries_container,
+#sauce_container,
+#drinks_container {
+  display: none;
+}
